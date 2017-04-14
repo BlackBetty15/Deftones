@@ -1,0 +1,413 @@
+
+@font-face {
+    font-family: deftonesFont;
+    src: url(../fonts/fontie-package/aileronblackbold.eot);
+    src: url(../fonts/fontie-package/aileronblack.otf);
+    src: url(../fonts/fontie-package/aileronblack.woff);
+    src: url(../fonts/fontie-package/aileronblack.svg);
+    src: url(../fonts/fontie-package/aileronblack.ttf);
+    font-weight: 900;
+    font-stretch: normal;
+
+}
+
+body,* {
+    padding:0;
+    margin:0;
+    font-family: Arial,sans-serif;
+    font-weight: lighter;
+
+
+}
+body{
+    background-color: #181818;
+}
+
+a{color:#07080A;}
+
+#pgtitle{
+    color:white;
+    position: absolute;
+    width:830px;
+    line-height: 300px;
+    font-family: deftonesFont, sans-serif;
+    font-size: 150px;
+    background-color: transparent;
+}
+#pgheader{
+    width:100%;
+    background-color: #07080A;
+    height: 350px;
+    position: relative;
+    top:0;
+}
+#mainNav{
+    width: 100%;
+    height:40px;
+    background-color: #181818;
+    font-size:1.4rem;
+
+}
+#mainNav ul li{
+    display: inline-block;
+    background-color: transparent;
+}
+#mainNav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+#mainNav ul li a:hover{
+    color: #8D8D92;
+}
+#mainNav ul li{
+    padding: 5px 30px;
+}
+#mainNav ul{
+    margin-left: 330px;
+}
+#media{
+    position:absolute;
+    width:100%;
+    height:70px;
+    left:0;
+    bottom: 20px;
+}
+#media ul{
+    margin-left: 455px;
+}
+#media ul li a i {
+    color: white;
+    padding: 0 20px;
+   font-size:250%;
+
+}
+#media ul li{
+    display: inline-block;
+
+}
+#media ul li a{
+    text-decoration: none;
+
+}
+#media ul li a :hover{
+    color:#8D8D92;
+
+}
+
+#container {
+    background: linear-gradient(rgba(24, 24, 24, 0), rgba(24, 24, 24, 0.9)), url("../img/cover1.jpg");
+    background-attachment: local;
+    background-size: cover;
+    opacity: 19;
+    width: 100%;
+    height: 750px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+#page{
+    position: relative;
+    background-color: #181818;
+    height: auto;
+    width: 100%;
+
+
+}
+
+#about{
+    color: white;
+    background-color: rgba(24,24,24,1);
+    position: absolute;
+    width: 100%;
+
+}
+
+#text{
+    width:60%;
+    height: auto;
+    background-color: transparent;
+    color: white;
+    float: left;
+
+}
+#text h3{
+    color: #7F7F7F;
+    font-style: oblique;
+    font-size: 25px;
+    text-indent: 20px;
+}
+
+#textContain{
+    color: white;
+    font-style: oblique;
+    text-indent: 40px;
+    padding: 10px 50px;
+}
+
+#otherNews{
+    width:37%;
+    min-height: 550px;
+    height: auto;
+    background-color:rgba(255,255,255,0.2);
+    color: white;
+    float: left;
+    border-radius: 10px;
+}
+#otherNews h3{
+    color: white;
+    font-size:25px;
+    padding:10px;
+    font-style: oblique;
+}
+.naslovi{
+    font-size:13px;
+    font-weight: bold;
+    padding: 40px 30px;
+    text-decoration: none;
+    color: white;
+    font-style: normal;
+    
+}
+.naslovi:hover{
+    color:black;
+
+}
+.titleH3{
+    margin: 10px 0;
+}
+.active{
+    background-color: white;
+    color: black;
+}
+.active:hover{
+    color:#181818;
+}
+#ourPic{
+    background-image: url("../img/us2.jpg");
+    background-size: cover;
+    width: auto;
+    min-height: 550px;
+}
+#tour{
+    color: white;
+    width: 100%;
+    height:auto;
+    position: absolute;
+    top: 700px;
+    background-color: #181818;
+    background: linear-gradient(rgba(24,24,24,1),rgba(24,24,24,0.3)), url("../img/cover3.jpg");
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 940px;
+}
+#tour h3{
+    color:white;
+}
+.sectionTitle{
+    width:100%;
+    text-indent: 20px;
+    text-align: left;
+    padding-bottom: 30px;
+    font-size: 35px;
+    font-style: oblique;
+    color: white;
+
+}
+.kupiKartu{
+    text-decoration:none;
+    color: black;
+    padding:17px;
+    background-color: white;
+}
+.kupiKartu:hover{
+    animation-name:buyticket;
+    animation-duration:1s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+}
+#tourDate{
+    margin:0 auto;
+    border-collapse: collapse;
+}
+#tourDate tr{
+    padding: 10px;
+    border-bottom:1px solid pink;
+}
+#tourDate tr th{
+    padding:0 70px;
+}
+#tourDate tr td{
+    padding: 25px 70px;
+    border-bottom: 1px solid white;
+    text-align: match-parent;
+}
+#music{
+    position:absolute;
+    top:1640px;
+     background: linear-gradient(rgba(173,173,173,1), rgba(24,24,24,0.9));
+
+    width: 100%;
+    height: 600px;
+}
+#playContainer{
+    padding: 10px;;
+    min-height: 350px;
+}
+#albumImg{
+    background-color: rgba(24,24,24,0.9);
+    width:75%;
+    height: 300px;
+    display: inline-block;
+}
+#controls{
+    padding: 10px 20px;
+}
+#songs{
+    height: 300px;
+    width: 20%;
+    display: inline-block;
+    margin: 0;
+    overflow-y: scroll;
+    background-color: rgba(24,24,24,0.6);
+}
+
+#imgAnime{
+    margin: auto;
+    width:290px;
+    height: 290px;
+    animation-name: flipit;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    backface-visibility: visible;
+    animation-direction: alternate;
+    background-size: cover;
+}
+.buttons{
+    color: white;
+    background: transparent;
+    border: none;
+}
+#aboutSong{
+    font-size: 18px;
+    color: white;
+    text-indent: 20px;
+}
+#controls{
+    position: relative;
+}
+#timer{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 57px;
+    top:15px;
+}
+.forPlay{
+    color:white;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+.playList{
+    text-decoration: none;
+    color:white;
+}
+.forPlay:hover{
+    animation-name: songAnimation;
+    animation-duration: 1s;
+    animation-timing-function:ease-out;
+    animation-fill-mode: forwards;
+}
+#connect{
+    position:absolute;
+    top:2200px;
+    width: 100%;
+    min-height: 400px;
+    background:transparent;
+    height: auto;
+}
+#textConnect{
+    text-indent: 20px;
+    color: white;
+    font-size: 18px;
+}
+#connect a {
+    color: white;
+    font-size: 30px;
+}
+#connect a:hover{
+    color: black;
+}
+#medias{
+    width: 100%;
+    text-align: center;
+    height: 270px;
+    line-height: 300px;
+
+}
+#signUp{
+    padding:10px 580px;
+}
+#mailInput{
+    width: 260px;
+    height: 40px;
+}
+#mailSubmit{
+    height: 45px;
+    border: none;
+    padding: 10px;
+}
+#errorMsg{
+    color:red;
+    text-align: center;
+    visibility: hidden;
+}
+#pgFooter{
+    position: absolute;
+    top: 2700px;
+    height: 200px;
+    width: 100%;
+    background:linear-gradient(rgba(24,24,24,1),rgba(0,0,0,1));
+}
+#pgFooter{
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+/*Animacije*/
+@keyframes buyticket {
+    from{
+        background-color: white;
+        color: black;
+    }
+    to{
+        background-color: #2F680B;
+        color: white;
+    }
+}
+@keyframes songAnimation {
+    from{
+        background-color: transparent;
+    }
+    to{
+        background-color: #2F680B;
+        font-size:150%;
+        color: white;
+
+    }
+    
+}
+
+@keyframes flipit {
+    from{
+        transform: rotateY(0deg);
+        backface-visibility: visible;
+    }
+    to{
+        transform: rotateY(180deg);
+        backface-visibility: visible;
+    }
+}

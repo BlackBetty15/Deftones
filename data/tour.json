@@ -1,0 +1,62 @@
+[
+  {
+    "date":"APR 18",
+    "venue":"GASOMETER",
+    "location":"Vienna, Austria",
+    "tickets":"http://www.bandsintown.com/event/13183617/"
+  },
+  {
+    "date":"APR 19",
+    "venue":"ZENITH",
+    "location":"Munchen, Germany",
+    "tickets":"http://www.bandsintown.com/event/13183618/"
+  },
+  {
+    "date":"APR 20",
+    "venue":"HALLE 622",
+    "location":"Zurich, Switzerland",
+    "tickets":"http://www.bandsintown.com/event/13183620/"
+  },
+  {
+    "date":"APR 21",
+    "venue":"FABRIQUE",
+    "location":"Milan, Italy",
+    "tickets":"http://www.bandsintown.com/event/13183621/"
+  },
+  {
+    "date":"APR 23",
+    "venue":"STADTHALLE",
+    "location":"Offenbach, Germany",
+    "tickets":"http://www.bandsintown.com/event/13183624/"
+  },
+  {
+    "date":"APR 24",
+    "venue":"013",
+    "location":"Tilburg, Netherlands",
+    "tickets":"http://www.bandsintown.com/event/13183626/"
+  },
+  {
+    "date":"APR 25",
+    "venue":"ROCKHAL",
+    "location":"Luxembourg, Luxembourg",
+    "tickets":"http://www.bandsintown.com/event/13183628/"
+  },
+  {
+    "date":"APR 27",
+    "venue":"VELODROM",
+    "location":"Berlin, Germany",
+    "tickets":"http://www.bandsintown.com/event/13183629/"
+  },
+  {
+    "date":"APR 28",
+    "venue":"SPORTHALLE",
+    "location":"Hamburg, Germany",
+    "tickets":"http://www.bandsintown.com/event/13183630"
+  },
+  {
+    "date":"APR 29",
+    "venue":"GROEZROCK",
+    "location":"Meerhout, Belgium",
+    "tickets":"http://www.bandsintown.com/event/13183632/"
+  }
+]
