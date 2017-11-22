@@ -214,13 +214,13 @@ a{color:#07080A;}
     color: white;
 
 }
-.kupiKartu{
+.buyTicket{
     text-decoration:none;
     color: black;
     padding:17px;
     background-color: white;
 }
-.kupiKartu:hover{
+.buyTicket:hover{
     animation-name:buyticket;
     animation-duration:1s;
     animation-timing-function:ease-out;

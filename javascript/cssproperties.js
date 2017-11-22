@@ -4,13 +4,13 @@
 
 window.addEventListener("load",resizeHeader());
 function resizeHeader(){
-    var sirina=document.getElementById("pgheader").clientWidth;
+    var pgWidth=document.getElementById("pgheader").clientWidth;
 
 
-    var sirinat=document.getElementById("pgtitle");
-    var wdt=sirinat.clientWidth;
-    var calc= (sirina/2);
-    sirinat.style.left=(calc- (wdt/2))+"px";
+    var titleWidth=document.getElementById("pgtitle");
+    var wdt=titleWidth.clientWidth;
+    var calc= (pgWidth/2);
+    titleWidth.style.left=(calc- (wdt/2))+"px";
 
 }
 
@@ -29,30 +29,30 @@ function tourJson(){
             console.log(JSON.parse(this.responseText));
             var tourJSON=JSON.parse(this.responseText);
 
-            var tabela=document.getElementById("tourDate");
+            var table=document.getElementById("tourDate");
             for(var i=0;i<tourJSON.length;i++){
 
                var row=document.createElement("tr");
 
 
-               datum=document.createElement("td");
-               datum.innerHTML=tourJSON[i].date;
-                row.append(datum);
-                mesto=document.createElement("td");
-                mesto.innerHTML=tourJSON[i].venue;
-                row.append(mesto);
-                zemlja=document.createElement("td");
-                zemlja.innerHTML=tourJSON[i].location;
-                row.append(zemlja);
+               dateInfo=document.createElement("td");
+               dateInfo.innerHTML=tourJSON[i].date;
+                row.append(dateInfo);
+                venue=document.createElement("td");
+                venue.innerHTML=tourJSON[i].venue;
+                row.append(venue);
+                country=document.createElement("td");
+                country.innerHTML=tourJSON[i].location;
+                row.append(country);
                 link=document.createElement("a");
                 link.href=tourJSON[i].tickets;
                 link.innerHTML="TICKETS";
-                link.className="kupiKartu";
+                link.className="buyTicket";
                 link.target="_blank";
-                karta=document.createElement("td");
-                karta.append(link);
-                row.append(karta);
-                tabela.appendChild(row);
+                ticket=document.createElement("td");
+                ticket.append(link);
+                row.append(ticket);
+                table.appendChild(row);
             }
 
         }
@@ -64,27 +64,27 @@ function tourJson(){
 }
 function check(){
 
-    var polje=document.getElementById("mailInput");
-    var poruka=polje.value;
-    var greska=document.getElementById("errorMsg");
+    var inputPlace=document.getElementById("smallInput");
+    var message=inputPlace.value;
+    var error=document.getElementById("errorMsg");
     var pattern=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-    if(poruka==""){
-        greska.innerHTML="You must fill input first!";
-        greska.style.visibility="visible";
-        polje.style.borderColor="red";
+    if(message==""){
+        error.innerHTML="You must fill input first!";
+        error.style.visibility="visible";
+        inputPlace.style.borderColor="red";
     }
-    else if(pattern.test(poruka)){
+    else if(pattern.test(message)){
         alert("You sign up successfully");
-        polje.value="";
-        greska.visibility="hidden";
-        polje.style.borderColor="gray";
+        inputPlace.value="";
+        error.visibility="hidden";
+        inputPlace.style.borderColor="gray";
     }
     else{
-        greska.innerHTML="Please, enter valid format for this input";
-        greska.style.visibility="visible";
-        polje.style.borderColor="red";
-        polje.value="";
+        error.innerHTML="Please, enter valid format for this input";
+        error.style.visibility="visible";
+        inputPlace.style.borderColor="red";
+        inputPlace.value="";
     }
 
 }

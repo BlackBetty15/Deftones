@@ -1,12 +1,12 @@
 
 var player=document.getElementById("audioPlayer");
-var slika=document.getElementById("imgAnime");
-var trenutnoIme=document.getElementById("trenutnoIme");
-trenutnoIme .innerHTML='Choose a song...';
+var imgAnime=document.getElementById("imgAnime");
+var currentName=document.getElementById("currentName");
+currentName .innerHTML='Choose a song...';
 var album=document.getElementById("album");
-var dugme=document.getElementById("play");
-var trenutno=document.getElementById("trenutno");
-var ukupno=document.getElementById("ukupno");
+var playBtn=document.getElementById("play");
+var now=document.getElementById("now");
+var sum=document.getElementById("sum");
 var playlist=document.getElementsByClassName("playList");
 
     for(var i=0;i<playlist.length;i++){
@@ -19,32 +19,32 @@ var playlist=document.getElementsByClassName("playList");
 
             player.setAttribute("src",audioSrc);
             player.play();
-            trenutnoIme.innerHTML=name;
+            currentName.innerHTML=name;
             album.innerHTML=albumName;
-            slika.style.backgroundImage="url("+albumLink+")";
-            dugme.innerHTML='<i class="fa fa-pause" aria-hidden="true"></i>'
+            imgAnime.style.backgroundImage="url("+albumLink+")";
+            playBtn.innerHTML='<i class="fa fa-pause" aria-hidden="true"></i>'
         });
 
     }
 
-dugme.addEventListener("click",function () {
+playBtn.addEventListener("click",function () {
     if(player.paused) {
         player.play();
-        dugme.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
-        slika.style.visibility="visible";
+        playBtn.innerHTML = '<i class="fa fa-pause" aria-hidden="true"></i>';
+        imgAnime.style.visibility="visible";
     } else {
         player.pause();
-        dugme.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
-        slika.style.visibility="hidden";
+        playBtn.innerHTML = '<i class="fa fa-play" aria-hidden="true"></i>';
+        imgAnime.style.visibility="hidden";
     }
 });
-var idIntervala=setInterval(function(){
+var idInterval=setInterval(function(){
 
-    trenutno.innerHTML=readableDuration(player.currentTime);
+    now.innerHTML=readableDuration(player.currentTime);
 },100);
 
 player.addEventListener('loadedmetadata',function () {
-    ukupno.innerHTML=readableDuration(player.duration);
+    sum.innerHTML=readableDuration(player.duration);
 });
 player.addEventListener('ended',function () {
     control.innerHTML='<i class="fa fa-play" aria-hidden="true"></i>';
